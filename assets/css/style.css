@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-body {
+#wrapper {
   background: #333;  /*background fallback*/
   background-attachment: fixed;
   background-size: cover;
@@ -22,7 +23,7 @@ body {
   z-index: -100;
 }
 
-article {
+#landing-intro {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,25 +36,151 @@ article {
 .jumbotron {
   background-color: transparent;
   height: 100vh;
-  padding-top: 25vh;
+  padding-top: 15vh;
   padding-bottom: 25vh;
   margin-bottom: 0px;
 }
 
-.jumbotron h1 {
-  color: #e9e9e9;
-  letter-spacing: 3px;
+.jumbotron img {
+  width: 400px;
+ /* background-color: rgba(255,255,255,25%);
+  padding: 10px 10px;
+  border-radius: 15px;*/
+  
 }
 
 #landing-button {
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 #landing-button:hover {
   color: #141414;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
+/*why excel*/
+
+.excel-logo  {
+  width: 120px;
+}
+
+.nav-item-why-excel {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #181818;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.card-img-bottom {
+  height: 20rem;
+  background: url(../images/why-image1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card-img-1 {
+  height: 20rem;
+  background: url(../images/why-image1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card-img-2 {
+  height: 20rem;
+  background: url(../images/why-image2.jpeg) center no-repeat;
+  background-size: cover;
+}
+
+.card-img-3 {
+  height: 20rem;
+  background: url(../images/why-image3.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.why-items {
+  padding-top: 15%;
+}
+
+.card {
+  border: none;
+}
+
+#welcome  p {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+
+#why-excel p {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+
+.remove-overflow-y {
+  overflow-y: hidden;
+}
+
+footer {
+  background-color: #1d2951;
+  color: #cccccc;
+}
+
+.footer-link {
+  color:#cccccc;
+}
+
+/*our clients*/
+
+#client-intro {
+  background-image: url(../images/main-clients.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+/*
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}*/
 
 
 
