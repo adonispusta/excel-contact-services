@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+ /* overflow-x: hidden;*/
 }
 
 #wrapper {
@@ -39,36 +39,65 @@
   padding-top: 15vh;
   padding-bottom: 25vh;
   margin-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px
 }
 
 .jumbotron img {
   width: 400px;
- /* background-color: rgba(255,255,255,25%);
-  padding: 10px 10px;
-  border-radius: 15px;*/
-  
 }
 
 #landing-button {
-  font-weight: 700px;
+  font-weight: 700;
+  
 }
 
 #landing-button:hover {
   color: #141414;
-  font-weight: 700px;
+  font-weight: 700;
+
 }
 
+.lead {    
+/*font-family: 'Kaushan Script', cursive;*/
+  font-size: 30px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  background-color: rgba(42,42,42,0.5);
+  color: white;
+  width: auto;
+}
 /*why excel*/
 
 .excel-logo  {
-  width: 120px;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .nav-item-why-excel {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: #181818;
+/*  color: #181818;*/
+}
+
+.navbar {
+  background-color: rgb(73,157,245);
+  box-shadow: 0 2px 10px #A0A0A0;
+}
+
+#client-nav{
+  margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
 }
 
 .carousel-item {
@@ -99,29 +128,34 @@
   background-size: cover;
 }
 
-.why-items {
-  padding-top: 15%;
+.disp-table {
+  height: 320px;
+  display: table;
 }
 
-.card {
-  border: none;
+.disp-cell {
+  height: 320px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-#welcome  p {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 30px;
+#welcome {
+  background-color: #f1f1f1;
 }
 
-#why-excel p {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 30px;
+#why-excel {
+  background-color: rgb(73,157,245);
 }
 
 .remove-overflow-y {
   overflow-y: hidden;
 }
+
+.card-img-1, .card-img-2, .card-img-3 {
+  border-radius: 2%;
+  box-shadow: 5px 5px 20px #181818;
+}
+
 
 footer {
   background-color: #1d2951;
@@ -134,61 +168,223 @@ footer {
 
 /*our clients*/
 
+
+
 #client-intro {
   background-image: url(../images/main-clients.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
 
 }
 
-/*
-.container {
+.client-list {
+  background-color: #f1f1f1;
+}
+
+
+.client-container {
   position: relative;
-  width: 50%;
+  height: 200px;
+  width: auto;
+  display: table;
+
 }
 
-.image {
+.test-div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.client-logo {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 2%;
 }
 
 .overlay {
   position: absolute;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #499DF5;
+  border-radius: 2%;
   overflow: hidden;
   width: 100%;
-  height: 0;
+  height: 100%;
+  opacity: 0;
   transition: .5s ease;
 }
 
-.container:hover .overlay {
-  height: 100%;
+.client-container:hover .overlay {
+  opacity: 1;
 }
 
-.text {
+.client-text {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  /*-webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
   transform: translate(-50%, -50%);
   text-align: center;
-}*/
+}
 
+.test-client {
+  background-color: rgb(73,157,245);
+}
+
+.client-text {
+  font-size: 1em;
+}
+
+.bg {
+  background-color: rgb(25,25,25,0.4);
+}
+
+/*Your career*/
+
+.employee-pic {
+  width: 300px;
+  border-radius: 2%;
+  box-shadow: 5px 5px 20px #181818;
+}
+
+.employee-table {
+  display: table;
+  height: 380.031px;
+}
+
+.employee-cell {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+#job-search {
+  background-color: rgb(73,157,245);
+  height: auto;
+}
+
+.label-search {
+  margin-right: 20px;
+}
+
+.input-search {
+  margin-right: 40px;
+}
+
+.white-section {
+  background-color: #f1f1f1;
+}
+
+#excel-benefits {
+  height: auto;
+}
+
+.map {
+  width: 345px;
+  height: 345px;
+}
+
+.contact-cell {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 25px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.get-quote {
+  background-color: rgb(73,157,245);
+  height: auto;
+}
+
+.active {
+  color: yellow;
+}
+
+#comments-area {
+  height: 500px;
+}
+
+
+.page-cl {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#quote {
+  font-size: 50px
+}
 
 
 @media only screen and (min-width:401px) and (max-width: 960px) {
 
 }
 
-@media only screen and (max-width: 400px) {
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .carousel-item {
+    height: 100%;
+  }
+
+  .map {
+    width: 700px;
+    
+    padding-left: 35px;
+  }
+  .employee-cell {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .employee-table {
+    height: 30vh;
+  }
+
+  .testimonial {
+    padding-bottom: 0;
+  }
 }
 
+@media only screen and (max-width: 400px) {
+  .carousel-item {
+    height: 100%;
+  }
+
+  #client-intro {
+    height: 300%;
+  }
+
+  .rev {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .employee-table {
+    padding-top: 50px;
+  }
+
+  .samsung {
+    padding-top: 50px;
+  }
+
+  .southwest {
+    padding-top: 50px;
+  }
+
+  .expedia {
+    padding-top: 50px;
+  }
+}
