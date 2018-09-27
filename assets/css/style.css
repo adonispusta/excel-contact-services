@@ -104,6 +104,11 @@ p {
   height: 100%;
 }
 
+#car-update {
+  height: 100%;
+  object-fit: cover;
+}
+
 .card-img-bottom {
   height: 20rem;
   background: url(../images/why-image1.jpg) center no-repeat;
