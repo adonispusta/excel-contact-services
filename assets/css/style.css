@@ -101,7 +101,7 @@ p {
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 100%;
 }
 
 .card-img-bottom {
